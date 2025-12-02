@@ -1,19 +1,19 @@
 @use './main';
 
 :root {  
-  --color: #272727;
-  --color2: #FFF;
-  --color3: #F00;
-  --background: #FFF;
-  --background2: #E1E1E1;
-  --background3: #434343;  
+  --color: #000000;
+  --color2: #fefefe;
+  --color3: #fefefe;
+  --background: #ffffff;
+  --background2: #0857f0fa;
+  --background3: #14416a;  
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color: #d8d8d8;
     --color2: #000;
-    --color3: #F00;
+    --color3: rgb(255, 238, 4);
     --background: #000;
     --background2: #1E1E1E;
     --background3: #BABABA;
@@ -101,8 +101,16 @@ button {
   padding: 10px;
   border: none;
   border-radius: 10px;
-  background: var(--color);
-  color: var(--color2);
+  background:#0857f0fa;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  transition: opacity .2s;;
   font-size: 1rem;
   font-weight: 16px;
   font-weight: bold;
@@ -125,7 +133,7 @@ h1 {
   @include commons;
   font-size: 42px;
   font-weight: bold;
-  color: var(--current-color);
+  color: var(--color);
 
   // @media #{main.$mob} {
   //   font-size: main.vwMax(24px);
@@ -167,9 +175,9 @@ h4 {
 
 a {
     &:link {
-    color: var(--color);
+    color: #000000;
   }
   &:visited {
-    color: var(--color);
+    color: #000000;
   }
 }
